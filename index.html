@@ -21,7 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
     <!-- Swiper Slide -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Stylesheet -->
     <link href="css/ele-trail-style.css" rel="stylesheet" type="text/css">
@@ -66,10 +66,9 @@
         <div id="menu" class="menu">
             <!--- nested again for menu-expand-animation-styles --->
             <div class="menu-expander">
-                <a href="about.html" onclick="menuControl()"><i
-                        class="fas fa-arrow-right"></i>&nbsp;&nbsp;Accmmodation</a>
-                <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Dining</a>
-                <a href="#contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Find Us</a>
+                <a href="about.html" onclick="menuControl()">Accmmodation</a>
+                <a href="guide.html" onclick="menuControl()">Dining</a>
+                <a href="#contact" onclick="menuControl()">Find Us</a>
                 <a class="action" href="form.html" onclick="menuControl()">Book&nbsp;Now&nbsp;&nbsp;<i
                         class="fas fa-arrow-right"></i></a>
             </div>
@@ -130,7 +129,7 @@
     
     <!------------------------------------ Dining -------------------------------------->
 
-    <div id="" class="section dining feature right">
+    <div id="" class="section dining feature">
         <picture class="img-box">
             <source media="(min-width: 768px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-dining.jpg">
             <source media="(min-width: 0px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-dining-mobile.jpg">
@@ -153,7 +152,7 @@
     
     <div id="" class="section activities feature">
         <picture class="img-box">
-            <source media="(min-width: 768px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-luxury-rooms.jpg">
+            <source media="(min-width: 768px)" srcset="img/ride.jpg">
             <source media="(min-width: 0px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-activities-mobile.jpg">
             <img src="img/Edu-sample.jpg">
         </picture>
@@ -172,7 +171,7 @@
     
     <!------------------------------------ Accommodation -------------------------------------->
     
-    <div id="" class="section dining feature right">
+    <div id="" class="section dining feature">
         <picture class="img-box">
             <source media="(min-width: 768px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-luxury-rooms.jpg">
             <source media="(min-width: 0px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-luxury-rooms-mobile.jpg">
@@ -190,8 +189,112 @@
             </a>
         </div> 
     </div>
-
     
+    <!------------------------------------ Reviews -------------------------------------->
+    
+    <div class="reviews section">
+        <!-- Slider main container -->
+        <div class="swiper-container review-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide quote">
+                    <p>
+                        “ We were one oft the first guest and everything was perfect. After a long journey the best to rest ! We really enjoyed the breakfast which was included ! Fantastic cheap dinner also ! They organised also a trip to the wild life sanctuary for a good price.We highly recommend this place.”<br><br>— BeaHamburg, Hamburg, Germany —
+                    </p>
+                </div>
+                <div class="swiper-slide quote">
+                    <p>
+                        “ We were one oft the first guest and everything was perfect. After a long journey the best to rest ! We really enjoyed the breakfast which was included ! Fantastic cheap dinner also ! They organised also a trip to the wild life sanctuary for a good price.We highly recommend this place.”<br><br>— BeaHamburg, Hamburg, Germany —
+                    </p>
+                </div>
+                <div class="swiper-slide quote">
+                    <p>
+                        “ We were one oft the first guest and everything was perfect. After a long journey the best to rest ! We really enjoyed the breakfast which was included ! Fantastic cheap dinner also ! They organised also a trip to the wild life sanctuary for a good price.We highly recommend this place.”<br><br>— BeaHamburg, Hamburg, Germany —
+                    </p>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    
+    <!------------------------------------ Gallery -------------------------------------->
+    
+    <div class="gallery section feature">
+        <div class="gallery-block">
+            <div class="video-box">
+                <picture class="img-box">
+                    <source media="(min-width: 768px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-luxury-rooms.jpg">
+                    <source media="(min-width: 0px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-luxury-rooms-mobile.jpg">
+                    <img src="img/Edu-sample.jpg">
+                </picture>
+            </div>
+            <div class="feature-info">
+                <a class="block-link" href="#">
+                    <hr>
+                    <h2>Explore<br>Elephant Trail</h2>
+                    <p>
+                        Take a peek into the never ending pleasures in Elephant Trail.
+                    </p>
+                    <hr>
+                </a>
+            </div> 
+        </div>
+    </div>
+
+    <!------------------------------------ Book Now -------------------------------------->
+    
+    <div class="section book-now">
+        <a class="action" href="form.html" onclick="menuControl()">Book&nbsp;Now&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+    </div>
+    
+    <!------------------------------------ Get in touch -------------------------------------->
+    
+    <div class="section get-in-touch">
+        <a class="action" href="form.html" onclick="menuControl()">Get&nbsp;In&nbsp;&nbsp;Touch&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+        <h3>Reach us for more inquiries</h3>
+    </div>
+    
+    <!------------------------------------ Outro -------------------------------------->
+    
+    <div class="outro section">
+        <picture class="img-box">
+            <source media="(min-width: 768px)" srcset="img/ride.jpg">
+            <source media="(min-width: 0px)" srcset="img/athgira-elephant-trail-udawalawe-boutique-activities-mobile.jpg">
+            <img src="img/Edu-sample.jpg">
+        </picture>
+    </div>
+    
+    <!----------------------------------- Other services ------------------------------------->
+    
+    <div class="section other-services">
+        <div class="desc">
+            <h3>Looking for a different experience? Discover our other hotels and the safari service.</h3>
+        </div>
+        <div class="hotel-links athgira">
+            <a href="#">
+            </a>
+            <div class="link-info">
+                hotel
+            </div>
+        </div>
+        <div class="hotel-links safari">
+            <a href="#">
+            </a>
+            <div class="link-info">
+                hotel
+            </div>
+        </div>
+        <div class="hotel-links camp">
+            <a href="#">
+            </a>
+            <div class="link-info">
+                hotel
+            </div>
+        </div> 
+    </div>
 
     <!------------------------------------ Footer -------------------------------------->
 
@@ -218,12 +321,12 @@
     <!------------------------------------ End of footer -------------------------------------->
 
     <!-- Swiper Slide -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/theme_ele-trail.js"></script>
 
     <script>
-        var mySwiper = new Swiper('.swiper-container', {
+        var mySwiper = new Swiper('.review-slider', {
 
             loop: true,
             autoplay: {

@@ -39,12 +39,14 @@ h2 {
     margin: 20px 0;
 }
 
-h4 {
+h3 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 100%;
     color: #998071;
+    margin: 20px 0 0 0;
+    text-align: center;
 }
 
 p {
@@ -72,7 +74,7 @@ a {
 .action {
     width: auto;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid #998071;
     transition: background-color 0.3s;
 }
 
@@ -95,7 +97,7 @@ hr {
 }
 
 .img-box img {
-    height: 100%;
+    width: 100%
 }
 
 .hide {
@@ -113,39 +115,6 @@ hr {
 
 .section.boxed {
     padding: 16% 12%;
-}
-
-.section.feature {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section.feature .img-box img {
-    width: 100%;
-}
-
-.section.feature .back-color {
-    height: 300px;
-    width: 100%;
-    background-color: #c4dcd3;
-}
-
-.section.feature .feature-info {
-    position: absolute;
-    bottom: 10vw;
-    width: 80%;
-    background-color: white;
-    padding: 10%;
-}
-
-.feature-info h2 {
-    margin: 40px 0;
-}
-
-.feature-info p {
-    margin-bottom: 40px;
 }
 
 .vw_size {
@@ -180,40 +149,6 @@ hr {
     
     .section.boxed {
         padding: 6%;
-    }
-    
-    .section.feature {
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 30vw;
-        width: 100vw;
-    }
-    
-    .section.feature .img-box {
-        width: 66vw;
-        background-color: red;
-    }
-    
-    .section.feature .img-box img {
-        width: auto;
-        height: 100%;
-    }
-    
-    .section.feature .back-color {
-        height: 100%;
-        width: 34vw;
-        background-color: #c4dcd3;
-    }
-    
-    .section.feature .feature-info {
-        bottom: auto;
-        right: 5vw;
-        width: 40vw;
-        padding: 5vw;
-    }
-    
-    .feature-info p, .feature-info h2 {
-        text-align: left;
     }
     
     .block-link {
@@ -468,6 +403,7 @@ hr {
     position: absolute;
     z-index: 3;
     color: white;
+    border: 2px solid white;
 }
 
 /*------------------- Intro-video -------------------*/
@@ -491,6 +427,78 @@ hr {
     }
 }
 
+/*------------------- Feature sections -------------------*/
+
+.section.feature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section.feature .img-box img {
+    width: 100%;
+}
+
+.section.feature .back-color {
+    height: 300px;
+    width: 100%;
+    background-color: #c4dcd3;
+}
+
+.section.feature .feature-info {
+    position: absolute;
+    bottom: 10vw;
+    width: 80%;
+    background-color: white;
+    padding: 10%;
+}
+
+.feature-info h2 {
+    margin: 40px 0;
+}
+
+.feature-info p {
+    margin-bottom: 40px;
+}
+
+@media(min-width:768px) {
+    
+    .section.feature {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 30vw;
+        width: 100vw;
+    }
+    
+    .section.feature .img-box {
+        width: 66vw;
+        background-color: red;
+    }
+    
+    .section.feature .img-box img {
+        width: auto;
+        height: 100%;
+    }
+    
+    .section.feature .back-color {
+        height: 100%;
+        width: 34vw;
+        background-color: #c4dcd3;
+    }
+    
+    .section.feature .feature-info {
+        bottom: auto;
+        right: 5vw;
+        width: 40vw;
+        padding: 5vw;
+    }
+    
+    .feature-info p, .feature-info h2 {
+        text-align: left;
+    }
+}
+
 /*------------------- Activities -------------------*/
 
 @media(min-width:768px) {
@@ -507,11 +515,143 @@ hr {
         display: none;
     }
     
-    .activities .feature-info {
+    .activities.section.feature .feature-info {
         height: 30vw;
         width: 50vw;
         left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+/*------------------- Reviews -------------------*/
+
+.review-slider {
+    width: 100vw;
+}
+
+.quote {
+    padding: 10%;
+}
+
+/*------------------- Gallery -------------------*/
+
+.section.gallery  {
+    height: auto;
+    background-color: #c4dcd3;
+    padding: 10vw;
+}
+
+.section.gallery .gallery-block {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.section.gallery .img-box img{
+    width: 100%;
+}
+
+.section.gallery .feature-info {
+    width: 100%;
+    background-color: white;
+}
+
+@media(min-width:768px) {
+    
+    .section.gallery  {
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section.gallery .gallery-block {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .section.gallery .img-box{
+        width: 50vw;
+    }
+    
+    .section.gallery .img-box img{
+        width: ;
+        height: auto;
+    }
+    
+    .section.gallery .feature-info {
+        position: relative;
+    }
+
+}
+
+/*------------------- Book Now -------------------*/
+
+.section.book-now {
+    padding: 10%;
+}
+
+/*------------------- Get in touch -------------------*/
+
+.section.get-in-touch {
+    padding: 10%;
+    background-color: #c4dcd3;
+}
+
+/*------------------- Other services -------------------*/
+
+.section.other-services .desc {
+    background-color: #998071;
+    padding: 30px
+}
+
+.section.other-services .desc h3 {
+    color: white;
+    margin: 0;
+}
+
+.hotel-links {
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hotel-links a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hotel-links .link-info {
+    background-color: white;
+    height: 16vh;
+    width: 30vw;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotel-links.athgira {
+    background-image: url(../img/athgira-hotel-athgira.jpg);
+}
+
+.hotel-links.safari {
+    background-image: url(../img/athgira-niluka-safari.jpg);
+}
+
+.hotel-links.camp {
+    background-image: url(../img/athgira-river-camp.jpg);
 }
 
 /*------------------- Footer -------------------*/
